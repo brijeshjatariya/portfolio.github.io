@@ -1,313 +1,1116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Brijesh_jatariya</title>
-  </head>
-  <body>
-    <!-- Header section -->
-    <section id="header">
-      <div class="container text-center">
-        <div class="user-box">
-          <img src="images/img1.png" alt="" />
-          <h1>Brijesh Verma</h1>
-          <p>Full Stack Devloper</p>
-        </div>
-      </div>
-      <div class="scroll-btn">
-        <div class="scroll-bar">
-          <a href=""><span></span></a>
-        </div>
-      </div>
-    </section>
-    <!-- =============================User Info ================================= -->
-    <section id="user-info">
-      <!-- =============Navbar====================== -->
-      <div class="nav-bar">
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#">BRIJESH</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">HOME </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">RESUME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">SERVICES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
 
-      <!--================== about=============================== -->
-      <div class="about container" id="about">
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <img src="images/img1.png" class="profile-img" />
-          </div>
-          <div class="col-md-6">
-            <h3>WhO AM I</h3>
-            <p>
-              Motivated junior web developer looking for a role as full-stack
-              web developer. Passionate about building first-class web
-              applications. Developed an e-commerce website for a local retailer
-              while at SRITS collage . Relevant skills include Visual thinking,
-              Database, Debugging,datastructure and alogritham and more.
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Brijesh Verma, Team Lead and Java Enterprise Application Developer specializing in banking platforms, Spring Boot, microservices, workflow automation and AI-enabled development."
+    >
+
+    <meta
+        name="keywords"
+        content="Team Lead, Java Developer, Spring Boot, Microservices, Banking Technology, CLOS, Newgen, PostgreSQL, Oracle, AI, RAG"
+    >
+
+    <meta name="author" content="Brijesh Verma">
+
+    <title>Brijesh Verma | Team Lead & Java Developer</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript is loaded after HTML parsing -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Accessibility: skip navigation -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <!-- ======================================================
+         HEADER / NAVIGATION
+    ======================================================= -->
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar container" aria-label="Primary navigation">
+
+            <a href="#home" class="logo" aria-label="Brijesh Verma home">
+                <span class="logo-symbol">&lt;</span>
+                <span>BV</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navigation-wrapper" id="navigation-menu">
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link nav-contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Switch color theme"
+                    title="Switch color theme"
+                >
+                    <span class="theme-icon" aria-hidden="true">☀</span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==================================================
+             HERO SECTION
+        =================================================== -->
+
+        <section class="hero section" id="home">
+            <div class="hero-background" aria-hidden="true">
+                <span class="gradient-orb gradient-orb-one"></span>
+                <span class="gradient-orb gradient-orb-two"></span>
+                <span class="grid-pattern"></span>
+            </div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        <span class="status-dot"></span>
+                        Building enterprise banking solutions
+                    </p>
+
+                    <h1>
+                        Hi, I’m
+                        <span class="gradient-text">Brijesh Verma.</span>
+                    </h1>
+
+                    <p class="hero-role">
+                        Team Lead
+                        <span class="role-divider">|</span>
+                        Java & Enterprise Application Developer
+                    </p>
+
+                    <p class="hero-description">
+                        I lead engineering teams and build scalable banking
+                        platforms using Java, Spring Boot, microservices,
+                        workflow automation and AI-enabled development.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="button button-primary">
+                            View My Work
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a
+                            href="assets/Brijesh-Verma-Resume.pdf"
+                            class="button button-secondary"
+                            download
+                        >
+                            Download Resume
+                            <span aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-social-links">
+
+                        <a
+                            href="https://www.linkedin.com/in/brijesh-verma-java-dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit LinkedIn profile"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <span aria-hidden="true">•</span>
+
+                        <a
+                            href="https://github.com/brijeshjatariya/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit GitHub profile"
+                        >
+                            GitHub
+                        </a>
+
+                        <span aria-hidden="true">•</span>
+
+                        <a href="mailto:brijeshverma8388@gmail.com">
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+
+                    <div class="profile-frame">
+                        <div class="profile-glow" aria-hidden="true"></div>
+
+                        <img
+                            src="assets/brijesh-profile.jpg"
+                            alt="Professional profile photograph"
+                            class="profile-image"
+                        >
+
+                        <div class="floating-card role-card">
+                            <span class="floating-icon" aria-hidden="true">⌘</span>
+
+                            <div>
+                                <small>Current role</small>
+                                <strong>Team Lead</strong>
+                            </div>
+                        </div>
+
+                        <div class="floating-card experience-card">
+                            <strong>4+</strong>
+                            <span>Years of experience</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a
+                href="#about"
+                class="scroll-indicator"
+                aria-label="Scroll to About section"
+            >
+                <span>Scroll</span>
+                <span class="scroll-line" aria-hidden="true"></span>
+            </a>
+        </section>
+
+        <!-- ==================================================
+             IMPACT METRICS
+        =================================================== -->
+
+        <section class="impact-section" aria-label="Professional highlights">
+            <div class="container impact-grid">
+
+                <article class="impact-item reveal">
+                    <strong>4+</strong>
+                    <span>Years of Experience</span>
+                </article>
+
+                <article class="impact-item reveal">
+                    <strong>3+</strong>
+                    <span>Major Banking Solutions</span>
+                </article>
+
+                <article class="impact-item reveal">
+                    <strong>2×</strong>
+                    <span>Pinnacle Performance Award</span>
+                </article>
+
+                <article class="impact-item reveal">
+                    <strong>3×</strong>
+                    <span>High Five Award</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             ABOUT
+        =================================================== -->
+
+        <section class="section about-section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-label">About Me</p>
+
+                    <h2>
+                        Engineering reliable systems for
+                        <span class="gradient-text">real business impact.</span>
+                    </h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-content reveal">
+                        <p class="about-introduction">
+                            I’m a Team Lead at Newgen Software with more than
+                            four years of experience delivering enterprise
+                            banking and commercial loan origination solutions.
+                        </p>
+
+                        <p>
+                            My work covers technical leadership, backend
+                            development, workflow automation, database
+                            optimization, frontend performance, production
+                            troubleshooting and end-to-end product delivery.
+                        </p>
+
+                        <p>
+                            I have contributed to commercial lending platforms
+                            for major financial institutions, led critical
+                            modules from design through production, and
+                            supported complex banking workflows at enterprise
+                            scale.
+                        </p>
+
+                        <p>
+                            I also explore practical uses of generative AI,
+                            including RAG-based code assistants, Spring AI,
+                            local language models and AI-assisted engineering
+                            workflows.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Let’s build something meaningful
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <div class="about-highlights reveal">
+
+                        <article class="highlight-card">
+                            <span class="card-number">01</span>
+
+                            <div>
+                                <h3>Technical Leadership</h3>
+                                <p>
+                                    Engineering guidance, technical decisions,
+                                    mentoring, planning and code reviews.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="highlight-card">
+                            <span class="card-number">02</span>
+
+                            <div>
+                                <h3>Enterprise Banking</h3>
+                                <p>
+                                    Commercial lending, workflow automation,
+                                    loan origination and production delivery.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="highlight-card">
+                            <span class="card-number">03</span>
+
+                            <div>
+                                <h3>Performance Engineering</h3>
+                                <p>
+                                    SQL optimization, API analysis, frontend
+                                    profiling and root-cause investigation.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="highlight-card">
+                            <span class="card-number">04</span>
+
+                            <div>
+                                <h3>AI Innovation</h3>
+                                <p>
+                                    RAG applications, Spring AI, local models
+                                    and intelligent development workflows.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             EXPERIENCE
+        =================================================== -->
+
+        <section class="section experience-section" id="experience">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-label">Professional Journey</p>
+
+                    <h2>
+                        Experience built through
+                        <span class="gradient-text">ownership and delivery.</span>
+                    </h2>
+                </div>
+
+                <div class="experience-layout">
+
+                    <aside class="experience-summary reveal">
+                        <p>
+                            Progressed from Software Engineer to Team Lead
+                            while delivering enterprise platforms and leading
+                            critical banking initiatives.
+                        </p>
+
+                        <div class="company-summary">
+                            <span class="company-logo">N</span>
+
+                            <div>
+                                <strong>Newgen Software</strong>
+                                <span>August 2022 – Present</span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="timeline">
+
+                        <!-- Team Lead -->
+                        <article class="timeline-item reveal">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+
+                            <div class="timeline-card">
+
+                                <div class="timeline-header">
+                                    <div>
+                                        <p class="timeline-period">
+                                            Sep 2026 – Present
+                                        </p>
+
+                                        <h3>Team Lead</h3>
+
+                                        <p class="company-name">
+                                            Newgen Software · Noida
+                                        </p>
+                                    </div>
+
+                                    <span class="current-badge">Current</span>
+                                </div>
+
+                                <p class="timeline-description">
+                                    Leading engineering initiatives and driving
+                                    technical excellence across enterprise
+                                    banking products.
+                                </p>
+
+                                <ul class="responsibility-list">
+                                    <li>
+                                        Lead technical planning, implementation
+                                        and delivery of enterprise solutions.
+                                    </li>
+
+                                    <li>
+                                        Guide developers through architecture,
+                                        debugging and code-quality decisions.
+                                    </li>
+
+                                    <li>
+                                        Conduct code reviews and mentor team
+                                        members on production-safe development.
+                                    </li>
+
+                                    <li>
+                                        Explore Spring AI, RAG and Agentic AI
+                                        for intelligent banking solutions.
+                                    </li>
+                                </ul>
+
+                                <div class="technology-tags">
+                                    <span>Leadership</span>
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>Spring AI</span>
+                                    <span>RAG</span>
+                                    <span>Agentic AI</span>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Senior Software Engineer -->
+                        <article class="timeline-item reveal">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+
+                            <div class="timeline-card">
+
+                                <div class="timeline-header">
+                                    <div>
+                                        <p class="timeline-period">
+                                            Jul 2024 – Sep 2026
+                                        </p>
+
+                                        <h3>Senior Software Engineer</h3>
+
+                                        <p class="company-name">
+                                            Newgen Software · Noida
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="timeline-description">
+                                    Owned critical modules for commercial
+                                    lending platforms and managed delivery from
+                                    requirement analysis through production.
+                                </p>
+
+                                <ul class="responsibility-list">
+                                    <li>
+                                        Led development initiatives for
+                                        Commercial Loan Origination Systems.
+                                    </li>
+
+                                    <li>
+                                        Delivered complex multi-borrower and
+                                        group-proposal lending workflows.
+                                    </li>
+
+                                    <li>
+                                        Supported client releases, production
+                                        stabilization and issue resolution.
+                                    </li>
+
+                                    <li>
+                                        Optimized SQL, backend processing and
+                                        frontend application performance.
+                                    </li>
+                                </ul>
+
+                                <div class="technology-tags">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>Oracle</span>
+                                    <span>PostgreSQL</span>
+                                    <span>REST APIs</span>
+                                    <span>Newgen BPM</span>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Software Engineer -->
+                        <article class="timeline-item reveal">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+
+                            <div class="timeline-card">
+
+                                <div class="timeline-header">
+                                    <div>
+                                        <p class="timeline-period">
+                                            Aug 2022 – Jul 2024
+                                        </p>
+
+                                        <h3>Software Engineer</h3>
+
+                                        <p class="company-name">
+                                            Newgen Software · Noida
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="timeline-description">
+                                    Developed and maintained enterprise banking
+                                    modules on Newgen’s BPM and low-code
+                                    platform.
+                                </p>
+
+                                <ul class="responsibility-list">
+                                    <li>
+                                        Built Java and J2EE-based backend
+                                        components for banking workflows.
+                                    </li>
+
+                                    <li>
+                                        Developed configurable forms, workflow
+                                        rules and database integrations.
+                                    </li>
+
+                                    <li>
+                                        Investigated and resolved application,
+                                        database and production issues.
+                                    </li>
+                                </ul>
+
+                                <div class="technology-tags">
+                                    <span>Java</span>
+                                    <span>J2EE</span>
+                                    <span>JavaScript</span>
+                                    <span>SQL</span>
+                                    <span>BPM</span>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <!-- Internship -->
+                        <article class="timeline-item reveal">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+
+                            <div class="timeline-card">
+
+                                <div class="timeline-header">
+                                    <div>
+                                        <p class="timeline-period">
+                                            Dec 2020 – Mar 2021
+                                        </p>
+
+                                        <h3>Web Developer Intern</h3>
+
+                                        <p class="company-name">
+                                            Binplus Technologies · Jhansi
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p class="timeline-description">
+                                    Built responsive web interfaces and gained
+                                    practical experience with frontend and
+                                    backend web development.
+                                </p>
+
+                                <div class="technology-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             SKILLS
+        =================================================== -->
+
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-label">Technical Expertise</p>
+
+                    <h2>
+                        Technologies I use to build
+                        <span class="gradient-text">enterprise solutions.</span>
+                    </h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">01</div>
+
+                        <h3>Backend Engineering</h3>
+
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Spring MVC</span>
+                            <span>Spring Security</span>
+                            <span>Hibernate</span>
+                            <span>JPA</span>
+                            <span>REST APIs</span>
+                            <span>Microservices</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">02</div>
+
+                        <h3>Frontend Development</h3>
+
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Kendo UI</span>
+                            <span>Responsive UI</span>
+                            <span>Chrome DevTools</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">03</div>
+
+                        <h3>Database & Performance</h3>
+
+                        <div class="skill-tags">
+                            <span>PostgreSQL</span>
+                            <span>Oracle</span>
+                            <span>MySQL</span>
+                            <span>SQL Optimization</span>
+                            <span>Query Analysis</span>
+                            <span>Data Migration</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">04</div>
+
+                        <h3>Enterprise Platforms</h3>
+
+                        <div class="skill-tags">
+                            <span>Newgen BPM</span>
+                            <span>CLOS</span>
+                            <span>Workflow Automation</span>
+                            <span>Workitem Processing</span>
+                            <span>Banking Systems</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">05</div>
+
+                        <h3>Cloud & Engineering Tools</h3>
+
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>GitLab</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Maven</span>
+                            <span>Postman</span>
+                            <span>Swagger</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-icon" aria-hidden="true">06</div>
+
+                        <h3>AI & Intelligent Systems</h3>
+
+                        <div class="skill-tags">
+                            <span>Spring AI</span>
+                            <span>RAG</span>
+                            <span>Agentic AI</span>
+                            <span>Gemini</span>
+                            <span>Llama</span>
+                            <span>GitHub Copilot</span>
+                            <span>Local LLMs</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PROJECTS / CASE STUDIES
+        =================================================== -->
+
+        <section class="section projects-section" id="projects">
+            <div class="container">
+
+                <div class="section-heading project-heading reveal">
+                    <div>
+                        <p class="section-label">Selected Work</p>
+
+                        <h2>
+                            Projects focused on
+                            <span class="gradient-text">scale and reliability.</span>
+                        </h2>
+                    </div>
+
+                    <p class="section-supporting-text">
+                        Selected examples of enterprise engineering,
+                        performance investigation and AI innovation.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card featured-project reveal">
+
+                        <div class="project-top">
+                            <p class="project-category">
+                                Enterprise Banking Platform
+                            </p>
+
+                            <span class="project-index">01</span>
+                        </div>
+
+                        <h3>Commercial Loan Origination System</h3>
+
+                        <p>
+                            Contributed to a configurable enterprise lending
+                            platform covering borrower onboarding, appraisal,
+                            approval and disbursement workflows.
+                        </p>
+
+                        <ul class="project-points">
+                            <li>
+                                Configurable multi-stage lending workflows
+                            </li>
+
+                            <li>
+                                Secure integrations with banking services
+                            </li>
+
+                            <li>
+                                Database and backend performance optimization
+                            </li>
+                        </ul>
+
+                        <div class="project-footer">
+                            <div class="technology-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>Oracle</span>
+                                <span>REST APIs</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="project-details-button"
+                                data-project="clos"
+                            >
+                                View case study
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+                            <p class="project-category">Product Delivery</p>
+                            <span class="project-index">02</span>
+                        </div>
+
+                        <h3>Group Proposal Lending Module</h3>
+
+                        <p>
+                            Delivered complex multi-borrower proposal
+                            processing for commercial lending workflows.
+                        </p>
+
+                        <div class="project-footer">
+                            <div class="technology-tags">
+                                <span>Java</span>
+                                <span>Newgen</span>
+                                <span>Oracle</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="project-details-button"
+                                data-project="group-proposal"
+                            >
+                                View case study
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+                            <p class="project-category">Performance Engineering</p>
+                            <span class="project-index">03</span>
+                        </div>
+
+                        <h3>Financial Data Save Optimization</h3>
+
+                        <p>
+                            Investigated frontend, server and database delays
+                            affecting complex Kendo Spreadsheet save flows.
+                        </p>
+
+                        <div class="project-footer">
+                            <div class="technology-tags">
+                                <span>JavaScript</span>
+                                <span>HAR</span>
+                                <span>SQL</span>
+                                <span>Kendo UI</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="project-details-button"
+                                data-project="performance"
+                            >
+                                View case study
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <article class="project-card reveal">
+
+                        <div class="project-top">
+                            <p class="project-category">AI Innovation</p>
+                            <span class="project-index">04</span>
+                        </div>
+
+                        <h3>Codebase RAG Assistant</h3>
+
+                        <p>
+                            Built an AI assistant to retrieve contextual
+                            information from a large application codebase and
+                            support faster technical analysis.
+                        </p>
+
+                        <div class="project-footer">
+                            <div class="technology-tags">
+                                <span>RAG</span>
+                                <span>Spring AI</span>
+                                <span>Llama</span>
+                                <span>Gemini</span>
+                            </div>
+
+                            <button
+                                type="button"
+                                class="project-details-button"
+                                data-project="rag"
+                            >
+                                View case study
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="confidentiality-note reveal">
+                    Project descriptions intentionally exclude confidential
+                    client data, internal architecture and proprietary source
+                    code.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             EDUCATION
+        =================================================== -->
+
+        <section class="section education-section" id="education">
+            <div class="container">
+
+                <div class="education-card reveal">
+
+                    <div>
+                        <p class="section-label">Education</p>
+
+                        <h2>
+                            Bachelor of Technology
+                        </h2>
+
+                        <p class="education-specialization">
+                            Electronics and Communication Engineering
+                        </p>
+                    </div>
+
+                    <div class="education-details">
+                        <strong>SRITS, Datia</strong>
+                        <span>Madhya Pradesh, India</span>
+                        <span>Graduated in 2021</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CONTACT
+        =================================================== -->
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="contact-card reveal">
+
+                    <div class="contact-content">
+                        <p class="section-label">Let’s Connect</p>
+
+                        <h2>
+                            Have an enterprise engineering challenge?
+                        </h2>
+
+                        <p>
+                            Let’s discuss Java development, banking platforms,
+                            workflow automation, performance optimization or
+                            AI-enabled enterprise solutions.
+                        </p>
+
+                        <a
+                            href="mailto:brijeshverma8388@gmail.com"
+                            class="button button-primary"
+                        >
+                            Start a Conversation
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+                            <span class="contact-label">Email</span>
+
+                            <a href="mailto:brijeshverma8388@gmail.com">
+                                brijeshverma8388@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span class="contact-label">Location</span>
+                            <span>Noida, Uttar Pradesh, India</span>
+                        </div>
+
+                        <div class="contact-detail">
+                            <span class="contact-label">Social</span>
+
+                            <div class="contact-socials">
+                                <a
+                                    href="https://www.linkedin.com/in/brijesh-verma-java-dev/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    LinkedIn
+                                </a>
+
+                                <a
+                                    href="https://github.com/brijeshjatariya/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================
+         PROJECT MODAL
+    ======================================================= -->
+
+    <div
+        class="modal"
+        id="project-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+    >
+        <div class="modal-overlay" data-close-modal></div>
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                class="modal-close"
+                data-close-modal
+                aria-label="Close project details"
+            >
+                ×
+            </button>
+
+            <p class="modal-category" id="modal-category">
+                Case Study
             </p>
 
-            <div class="skills-bar">
-              <p>UI Design</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 95%">95%</div>
-              </div>
-              <p>Web Devlopment</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 85%">85%</div>
-              </div>
-              <p>Problem solving</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 80%">80%</div>
-              </div>
-              <p>Responsive design</p>
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%">70%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <h2 id="modal-title">Project title</h2>
 
-      <!-- =============socail-icon====================== -->
+            <div id="modal-description">
+                <!-- Project details will be inserted by JavaScript -->
+            </div>
 
-      <div class="social-icons">
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/people/Brijesh-Jatariya/100010853553113/"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/brijesh_jatariya/"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/brijesh-verma-bb23b9176"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/brijeshjatariya"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
+        </div>
+    </div>
 
-      <!-- =============resume====================== -->
-      <div class="resume" id="resume">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="text-center">My Experience</h3>
-              <ul class="timeline">
-                <li>
-                  <h4><span>2021 -</span> Front End Devloper</h4>
-                  <p>
-                    During my internship with Binpluse Technologies Private
-                    Limited -Jhanshi, I gained hands-on experience coding
-                    websites and applications. One of my projects was developing
-                    a Ecommerce website for an local ratailer. The website
-                    helped increase their event signups by 40%. Through my
-                    internship, I also gained valuable teamwork and
-                    communication skills. <br />
-                    <b>Company</b> -Binpluse Pvt Ltd <br />
-                    <b>Duration</b> -2months (jan-march 2021) <br />
-                    <b>Location</b> -Jhanshi U.P (India)<br />
-                  </p>
-                </li>
-                <li>
-                  <h4><span>2020 -</span> PCB Designing Workshop</h4>
-                  <p>
-                    The workshop was aimed to provide knowledge about simulation
-                    tool to test electronics and electrical circuit in software
-                    environment, PCB design software named copper connection to
-                    make physical PCB at home so that any student can make
-                    project on his own <br />
-                    <b>Company</b> -SRITS DATIA<br />
-                    <b>Duration</b> -One month (feb 2021) <br />
-                    <b>Location</b> -Datia m.p (India)<br />
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h3 class="text-center">My Education</h3>
-              <ul class="timeline">
-                <li>
-                  <h4><span>2021 -</span>Bachelor of Technology</h4>
-                  <p>
-                    At SRITS Datia i get a chance to learn verious Technologies
-                    and skills. During the collage time i was a active member of
-                    software Devlopment club which help me to improve my
-                    technical skills and communication skills
-                    <br />
-                    <b>Institute</b> -SRITS Datia (M.P)<br />
-                    <b>Session</b>-2017-2021<br />
-                    <b>Aggregate</b> - 7.45 CGPA<br />
-                  </p>
-                </li>
-                <li>
-                  <h4><span>2017 -</span>Higher secondary</h4>
-                  <p>
-                  
-                    <b>Institute</b> -SVM Bharatgan Datia (M.P)<br />
-                    <b>Session</b> 2016-2017 <br />
-                    <b>Aggregate</b> 61%<br />
-                  </p>
-                </li>
-                <li>
-                  <h4><span>2016 -</span> High School</h4>
-                  <p>
-                    <b>Institute</b> -SVM Bharatgan Datia (M.P)<br />
-                    <b>Session</b> 2015-2016 <br />
-                    <b>Aggregate</b> 72.8%<br />
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- =============Services====================== -->
-      <div class="services" id="services">
-        <div class="container">
-          <h1 class="text-center">My Offered Services</h1>
-          <p class="text-center">
-            Please Go On Linkdin And Check My Profile For More Information.
-          </p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="services-box">
-                <i class="fa fa-rocket"></i>
-                <span>Programming</span>
-                <p>
-                  I solve verious problemes on data structure and alogritham
-                  using C++. i Have learned how to program in c progtamming and
-                  javascript as well.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="services-box">
-                <i class="fas fa-laptop-code"></i>
-                <span>Web Devlopment</span>
-                <p>
-                  I have experienced with languages html,css,javascript.I also
-                  had good technical understanding of framworks like bootstrap
-                  ,nodejs i make many project in web Devlopment
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="services-box">
-                <i class="fas fa-brain"></i>
-                <span>Problem Solving</span>
-                <p>
-                  "I am a great problem solver because I can compartmentalize
-                  all aspects of a problem before studying it. I will never try
-                  to be a hero and solve a complicated problem without tapping
-                  into the resources around me."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- =============Contact====================== -->
-      <div class="contact" id="contact">
-        <div class="container text-center">
-          <h1>Contact Me</h1>
-          <p class="text-center"></p>
-          <div class="row">
-            <div class="col-md-4">
-              <i class="fa fa-phone"></i>
-              <p>+91 6260328388</p>
-            </div>
-            <div class="col-md-4">
-              <i class="fa fa-envelope"></i>
-              <p>Brijeshverma73729@gmail.com</p>
-            </div>
-            <div class="col-md-4">
-              <i class="fab fa-internet-explorer"></i>
-              <p>www.brijesh_jatariya.com</p>
-            </div>
-          </div>
-          <a
-            href="https://drive.google.com/file/d/1iQmIQaqNw_TidXII_JNpPK3_grF-ryKD/view?usp=sharing"
-          >
-            <button type="button" class="btn btn-primary">
-              <i class="fa fa-download"></i> Resume
-            </button>
-          </a>
-          <button type="button" class="btn btn-primary">
-            <i class="fa fa-rocket"></i> Hire Me
-          </button>
-        </div>
-        <div class="footer text-center">
-          Made With <i class="far fa-heart"></i> By Brijesh_jatariya
-        </div>
-      </div>
-    </section>
+    <!-- ======================================================
+         FOOTER
+    ======================================================= -->
 
-    <!-- ------------------smmoth scroll------------- -->
-    <script src="js/smooth-scroll.js"></script>
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
+    <footer class="site-footer">
+        <div class="container footer-content">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+            <a href="#home" class="footer-logo">
+                &lt;BV/&gt;
+            </a>
+
+            <p>
+                Designed and developed with HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                © <span id="current-year">2026</span> Brijesh Verma.
+                All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button
+        type="button"
+        class="back-to-top"
+        id="back-to-top"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        ↑
+    </button>
+
+</body>
 </html>
